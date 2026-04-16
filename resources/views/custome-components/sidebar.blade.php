@@ -18,7 +18,7 @@
                     <i class="ri-home-2-line"></i>Dashboard
                 </a>
 
-                <a href="#" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
+                <a href="{{ route('book.index') }}" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
                     <i class="ri-book-open-line"></i>Kelola Buku
                 </a>
 

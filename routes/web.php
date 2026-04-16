@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\ProfileController;
@@ -17,6 +18,14 @@ Route::middleware('auth')->controller(DashboardAdminController::class)->group(fu
 // Category
 Route::middleware('auth')->controller(CategoryController::class)->group(function() {
     Route::get('/categories', 'index')->name('categories');
+    Route::post('/categories/store', 'store')->name('categories.store');
+    Route::put('/categories/update/{id}', 'update')->name('categories.update');
+    Route::delete('/categories/destroy/{id}', 'destroy')->name('categories.destroy');
+});
+
+// Book
+Route::middleware('auth')->controller(BookController::class)->group(function() {
+    Route::get('/book/index', 'index')->name('book.index');
 });
 
 Route::middleware('auth')->group(function () {
