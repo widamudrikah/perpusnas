@@ -70,6 +70,7 @@
 ========================= */
 @layer utilities {
 
+
   /* font */
   .font-display {
     font-family: var(--font-display);
@@ -175,5 +176,9 @@
 
   .step-dot.done {
     @apply bg-[#0F9D58];
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 text-sm text-gray-900 placeholder-gray-400 outline-none focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-100 transition-all;
   }
 }

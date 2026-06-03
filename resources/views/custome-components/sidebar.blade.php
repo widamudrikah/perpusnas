@@ -14,11 +14,11 @@
         <div class="flex-1 overflow-y-auto">
             <div class="px-3 pt-4 pb-2">
                 <p class="text-[10px] font-semibold tracking-widest uppercase text-gray-400 px-2 mb-1">Menu Utama</p>
-                <a href="#" class="sidebar-active relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-semibold text-blue-500 cursor-pointer" style="background:linear-gradient(135deg,#EFF6FF,#F0FDF4)">
+                <a href="{{ route('dashboard') }}" class="sidebar-active relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-semibold text-blue-500 cursor-pointer" style="background:linear-gradient(135deg,#EFF6FF,#F0FDF4)">
                     <i class="ri-home-2-line"></i>Dashboard
                 </a>
 
-                <a href="{{ route('book.index') }}" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
+                <a href="{{ route('admin.book.index') }}" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
                     <i class="ri-book-open-line"></i>Kelola Buku
                 </a>
 
@@ -26,12 +26,10 @@
                     <i class="ri-price-tag-3-line"></i>Kategori
                 </a>
 
-                <a href="#" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
+                <a href="{{ route('admin.borrowings') }}" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
                     <i class="ri-todo-line"></i>Peminjaman
                 </a>
-                <a href="#" class="relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl mb-0.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-all">
-                    <i class="ri-group-line"></i>Anggota
-                </a>
+                
             </div>
         </div>
 

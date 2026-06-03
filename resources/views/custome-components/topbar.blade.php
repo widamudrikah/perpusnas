@@ -21,7 +21,7 @@
                 <!-- Date -->
                 <div class="hidden sm:flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-3 py-2 text-xs text-gray-500 font-medium">
                     <i class="ri-calendar-line"></i>
-                    6 April 2025
+                    {{ \Carbon\Carbon::now()->translatedFormat('j F Y') }}
                 </div>
             </div>
         </div>

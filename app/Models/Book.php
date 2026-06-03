@@ -18,4 +18,10 @@ class Book extends Model
         'cover',
         'description',
     ];
+
+    // Foreign key for category
+    public function category() {
+        return $this->belongsTo(Categories::class);
+    }
+
 }
